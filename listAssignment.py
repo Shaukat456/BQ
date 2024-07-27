@@ -11,3 +11,5 @@ for itemOfBothList in combineBoth:
         if item < 12:
             itemOfBothList.remove(item)
             print(itemOfBothList)
+
+

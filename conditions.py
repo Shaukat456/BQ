@@ -55,9 +55,36 @@ else:
 
 # excercises to get a good understanding of if else statement
 
-# 1. Check if the number is divisible by 5 or not
+# 1. Check if the number is divisible by 5 or not with solution
+
+number = 10
+
+if number % 5 == 0:
+    print("Number is divisible by 5")
+else:
+    print("Number is not divisible by 5")
+
+
 # 2. Check if the number is positive, negative or zero
+
+number = 0
+
+if number > 0:
+    print("Positive")
+
+elif number < 0:
+    print("Negative")
 # 3. Check if the number is even or odd
+
+
+number = 10
+
+if number % 2 == 0:
+    print("Even")
+
+else:
+    print("Odd")
+
 # 4. Check if the number is positive and even
 # 5. Check if the number is positive and odd
 # 6. Check if the number is negative and even

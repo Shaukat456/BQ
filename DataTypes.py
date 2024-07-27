@@ -6,7 +6,10 @@
 # 4. Tuple
 # 5. Dictionary
 
+
 # 1. Numbers
+
+
 # integer
 a = 10
 print(a)
@@ -54,3 +57,25 @@ print(bool)
 
 none = None
 print(none)
+
+
+# 9. Set
+# Set is a collection which is unordered and unindexed. No duplicate members.
+
+set = {10, 20, 30, 40, 50}
+print(set)
+
+
+# 10. Frozenset
+# Frozenset is a new class that has the characteristics of a set, but its elements cannot be changed once assigned.
+
+frozenset = frozenset({10, 20, 30, 40, 50})
+
+print(frozenset)
+
+
+# 11. Bytes
+# Bytes are immutable sequences of integers, ranging from 0 to 255.
+
+bytes = b"Python"
+print(bytes)

@@ -35,6 +35,7 @@ for i in range(1, 6):
 
 # The break statement is used to exit the loop prematurely, bypassing the normal loop condition. It is used to terminate the loop when a certain condition is met.
 
+
 # Example of a for loop with a break statement
 for i in range(1, 6):
     if i == 3:
