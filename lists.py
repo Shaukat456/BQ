@@ -75,7 +75,10 @@ print(even_numbers)
 # You can use a for loop to work with each individual item in a list. For example, here’s how you can print each item in a list of even numbers:
 
 
-even_numbers = [2, 4, 6]
+even_numbers = [2, 4, 6, "SHAUKAT", True]
+
+even_numbers[1] = 5
+
 
 for number in even_numbers:
 
