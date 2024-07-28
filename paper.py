@@ -30,7 +30,7 @@ while num > 0:
 print(factorial)
 
 # simple approach
-num = 5
+num = int(input("Enter a number: "))
 
 factorial = 1
 
