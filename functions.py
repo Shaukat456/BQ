@@ -229,6 +229,7 @@ print(result)
 
 # Task:
 # Write a function called list_length that takes a list as an argument and returns the length of the list.
+[2, 6, 3, 1, 9]
 
 
 def list_length(anyList):
@@ -236,6 +237,7 @@ def list_length(anyList):
 
 
 result = list_length([1, 2, 3, 4, 5])
+anotherList = list_length([54, 345, 3, 345])
 print(result)
 
 
@@ -248,7 +250,7 @@ def contains_substring(main_str, sub_str):
 
 
 # Test the function
-result = contains_substring("Hello, world!", "world")
+result = contains_substring("Hello, world!", "pppo")
 print(result)  # Output: True
 
 
@@ -259,8 +261,9 @@ print(result)  # Output: True
 
 s = "hello"
 
+
 # Extract "ell" (from index 1 to index 4)
-print(s[1:4])  # Output: "ell"
+print(s[0:2])  # Output: "ell"
 
 # Extract "hello" (from start to end)
 print(s[:])  # Output: "hello"
@@ -314,11 +317,16 @@ print(result)
 
 
 # Count words in a string
+string1 = "shaukat"
 
 
 def count_words(s):
+    # WE split the string into words
     words = s.split()
-    return len(words)
+
+    # We count the number of words
+    length = len(words)
+    return length
 
 
 # Test the function
@@ -340,10 +348,14 @@ joined_str = join_list(["apple", "banana", "cherry"])
 print(joined_str)
 
 
+# Assignment start
+
+
 # extract the unique words from a string
 def unique_words(s):
     words = s.lower().split()
-    return list(set(words))
+    uniqueWords = set(words)
+    return list(uniqueWords)
 
 
 # Test the function

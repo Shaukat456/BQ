@@ -23,11 +23,11 @@
 # Translating Pseudocode to Python Code
 # Once you have written the pseudocode, you can translate it into Python code. Here is the Python code for the above pseudocode:
 
-# number = int(input("Enter a number: "))
-# if number % 2 == 0:
-#     print("The number is even")
-# else:
-#     print("The number is odd")
+number = int(input("Enter a number: "))
+if number % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
 
 # This Python code follows the logic described in the pseudocode, but it uses the actual syntax of the Python programming language.
 
