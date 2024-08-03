@@ -212,3 +212,174 @@ result = longest_string(["apple", "banana", "cherry", "date"])
 
 
 print(result)
+
+
+# Exercise 2: Concatenate Strings
+# Task:
+# Write a function called concatenate_strings that takes two strings as arguments and returns them concatenated together with a space in between.
+
+
+def concatenate_strings(str1, str2):
+    return str1 + " " + str2
+
+
+result = concatenate_strings("Hello", "World")
+print(result)
+
+
+# Task:
+# Write a function called list_length that takes a list as an argument and returns the length of the list.
+
+
+def list_length(anyList):
+    return len(anyList)
+
+
+result = list_length([1, 2, 3, 4, 5])
+print(result)
+
+
+#  Check Substring
+# Write a function called contains_substring that takes two strings as arguments and returns True if the second string is found within the first string, otherwise returns False.
+
+
+def contains_substring(main_str, sub_str):
+    return sub_str in main_str
+
+
+# Test the function
+result = contains_substring("Hello, world!", "world")
+print(result)  # Output: True
+
+
+# Reverse String
+# Write a function called reverse_string that takes a string as an argument and returns the string reversed.
+
+# sequence[start:stop:step]
+
+s = "hello"
+
+# Extract "ell" (from index 1 to index 4)
+print(s[1:4])  # Output: "ell"
+
+# Extract "hello" (from start to end)
+print(s[:])  # Output: "hello"
+
+# Extract "hel" (from start to index 3)
+print(s[:3])  # Output: "hel"
+
+# Extract "lo" (from index 3 to end)
+print(s[3:])  # Output: "lo"
+
+# Reverse the string
+print(s[::-1])  # Output: "olleh"
+
+
+def is_palindrome(s):
+    # Reverse the string using slicing
+    reversed_s = s[::-1]
+
+    # Check if the original string is equal to the reversed string
+    return s == reversed_s
+
+
+# Test the function
+print(is_palindrome("radar"))  # Output: True
+print(is_palindrome("hello"))  # Output: False
+
+
+def reverse_string(s):
+
+    return s[::-1]
+
+
+# Test the function
+reversed_str = reverse_string("Python")
+print(reversed_str)
+
+
+#  Find Key in Dictionary
+
+# Write a function called find_key that takes a dictionary and a key as arguments and returns True if the key is found in the dictionary, otherwise returns False.
+
+
+def find_key(d, key):
+    return key in d
+
+
+# Test the function
+sample_dict = {"name": "Alice", "age": 25, "city": "New York"}
+result = find_key(sample_dict, "age")
+print(result)
+
+
+# Count words in a string
+
+
+def count_words(s):
+    words = s.split()
+    return len(words)
+
+
+# Test the function
+word_count = count_words("The quick brown fox jumps over the lazy dog")
+print(word_count)
+
+
+#  Join List into String
+
+# Write a function called join_list that takes a list of strings as an argument and returns a single string with all the list elements joined by a comma and a space.
+
+
+def join_list(lst):
+    return ", ".join(lst)
+
+
+# Test the function
+joined_str = join_list(["apple", "banana", "cherry"])
+print(joined_str)
+
+
+# extract the unique words from a string
+def unique_words(s):
+    words = s.lower().split()
+    return list(set(words))
+
+
+# Test the function
+unique = unique_words("This is a test. This test is only a test.")
+print(unique)  # Output: ['this', 'is', 'a', 'test.', 'only']
+
+
+# count Characters
+def count_characters(s):
+    char_count = {}
+    for char in s:
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+    return char_count
+
+
+# Test the function
+char_freq = count_characters("hello world")
+print(char_freq)
+
+
+# Remove duplicates from a list
+
+
+def remove_duplicates(lst):
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+
+
+# Test the function
+unique_list = remove_duplicates(["apple", "banana", "apple", "cherry", "banana"])
+print(unique_list)
