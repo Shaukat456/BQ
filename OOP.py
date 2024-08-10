@@ -352,3 +352,269 @@ class Shape(ABC):
     @abstractmethod
     def area(self):
         pass
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+
+# In this example, Shape is an abstract base class with an abstract method area. Circle is a concrete class that inherits from Shape and provides an implementation of the area method. The user can interact with the Circle class without needing to know the details of how the area is calculated.
+
+
+# Example 2 with explanation
+class Animal(ABC):
+
+    @abstractmethod
+    def speak(self):
+        pass
+
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog is barking")
+
+
+class Cat(Animal):
+    def speak(self):
+        print("Cat is meowing")
+
+
+# In this example, Animal is an abstract base class with an abstract method speak. Dog and Cat are concrete classes that inherit from Animal and provide implementations of the speak method. The user can interact with objects of type Dog and Cat without needing to know the details of how they speak.
+
+
+# Composition in python
+
+# Explain composition in python with examples
+
+# Composition is a design technique in which a class contains objects of other classes as attributes. It allows for code reuse and flexibility in defining relationships between classes.
+
+
+# Example 1 with explanation
+class Engine:
+    def start(self):
+        print("Engine is starting")
+
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def drive(self):
+        self.engine.start()
+        print("Car is driving")
+
+
+# In this example, Engine is a class that represents an engine. Car is a class that contains an Engine object as an attribute. When a Car object is created, it contains an Engine object, which can be used to start the engine and drive the car.
+
+
+# Example 2 with explanation
+class Wheel:
+    def rotate(self):
+        print("Wheel is rotating")
+
+
+class Bicycle:
+    def __init__(self):
+        self.front_wheel = Wheel()
+        self.rear_wheel = Wheel()
+
+    def ride(self):
+        self.front_wheel.rotate()
+        self.rear_wheel.rotate()
+        print("Bicycle is riding")
+
+
+# In this example, Wheel is a class that represents a wheel. Bicycle is a class that contains two Wheel objects as attributes (front_wheel and rear_wheel). When a Bicycle object is created, it contains two Wheel objects, which can be used to rotate the wheels and ride the bicycle.
+
+
+# static method in python
+
+# Explain static method in python with examples
+
+# A static method is a method that is associated with a class rather than an instance of the class. It does not have access to the instance attributes or methods and does not require an instance of the class to be called.
+
+
+# Example 1 with explanation
+class MathUtils:
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+
+result = MathUtils.add(5, 10)
+print(result)
+
+
+# In this example, add is a static method of the MathUtils class. It takes two parameters, x and y, and returns their sum. The static method can be called using the class name without needing an instance of the class.
+
+
+# Example 2 with explanation
+class StringUtils:
+
+    @staticmethod
+    def reverse(string):
+        return string[::-1]
+
+
+result = StringUtils.reverse("hello")
+
+print(result)
+
+
+# In this example, reverse is a static method of the StringUtils class. It takes a string as a parameter and returns the reversed string. The static method can be called using the class name without needing an instance of the class.
+
+
+# super() in python
+
+
+# Explain super() in python with examples
+
+# super() is a built-in function that allows a derived class to call the constructor or methods of its base class. It is commonly used in inheritance to access the base class's attributes and methods.
+
+
+# Example 1 with explanation
+class Animal:
+    def __init__(self, species):
+        self.species = species
+
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+    def __init__(self, species, breed):
+        super().__init__(species)
+        self.breed = breed
+
+    def bark(self):
+        print("Dog is barking")
+
+
+dog1 = Dog("Canis familiaris", "Labrador")
+
+# In this example, Animal is the base class with an __init__ method that initializes the species attribute. Dog is the derived class that calls the base class's __init__ method using super() to initialize the species attribute. The breed attribute is specific to the Dog class.
+
+
+# Example 2 with explanation
+
+
+class Vehicle:
+    def __init__(self, model):
+        self.model = model
+
+    def drive(self):
+        print("Vehicle is driving")
+
+
+class Car(Vehicle):
+    def __init__(self, model, year):
+        super().__init__(model)
+        self.year = year
+
+    def honk(self):
+        print("Car is honking")
+
+
+car1 = Car("Toyota", 2020)
+
+# In this example, Vehicle is the base class with an __init__ method that initializes the model attribute. Car is the derived class that calls the base class's __init__ method using super() to initialize the model attribute. The year attribute is specific to the Car class.
+
+
+# Decorators in python
+
+# Explain decorators in python with examples
+
+# Decorators are a powerful feature in Python that allow you to modify or extend the behavior of functions or methods. They are used to add functionality to existing functions without modifying their code.
+
+
+# Example 1 with explanation
+def uppercase_decorator(func):
+    def wrapper():
+        result = func()
+        return result.upper()
+
+    return wrapper
+
+
+@uppercase_decorator
+def greet():
+    return "hello"
+
+
+result = greet()
+print(result)
+
+
+# In this example, uppercase_decorator is a decorator function that takes a function as a parameter and returns a new function that modifies the result of the original function by converting it to uppercase. The @uppercase_decorator syntax is used to apply the decorator to the greet function.
+
+
+# class method in python
+
+
+# Explain class method in python with examples
+
+# A class method is a method that is associated with a class rather than an instance of the class. It takes the class itself as the first parameter (usually named cls) and can be called using the class name.
+
+
+# Example 1 with explanation
+class MathUtils:
+    @classmethod
+    def add(cls, x, y):
+        return x + y
+
+
+result = MathUtils.add(5, 10)
+print(result)
+
+
+# In this example, add is a class method of the MathUtils class. It takes two parameters, x and y, and returns their sum. The class method can be called using the class name.
+
+
+# Example 2 with explanation
+class StringUtils:
+    @classmethod
+    def reverse(cls, string):
+        return string[::-1]
+
+
+result = StringUtils.reverse("hello")
+
+print(result)
+
+
+# In this example, reverse is a class method of the StringUtils class. It takes a string as a parameter and returns the reversed string. The class method can be called using the class name.
+
+
+# Conclusion
+
+# we have covered the key concepts of object-oriented programming in Python, including classes, constructors, methods, inheritance, polymorphism, encapsulation, abstraction, composition, static methods, super(), decorators, and class methods. Understanding these concepts is essential for writing clean, modular, and maintainable code in Python. I hope this article has helped you gain a better understanding of object-oriented programming in Python and how to apply these concepts in your own projects. Thank you for reading!
+
+
+# Class method vs Static method in python
+
+# Explain class method vs static method in python with examples
+
+# A class method is a method that is associated with a class rather than an instance of the class. It takes the class itself as the first parameter (usually named cls) and can be called using the class name.
+
+# A static method is a method that is associated with a class rather than an instance of the class. It does not have access to the instance attributes or methods and does not require an instance of the class to be called.
+
+
+# Example 1 with explanation
+class MathUtils:
+    @classmethod
+    def add(cls, x, y):
+        return x + y
+
+    @staticmethod
+    def subtract(x, y):
+        return x - y
+
+
+result1 = MathUtils.add(5, 10)
+result2 = MathUtils.subtract(10, 5)
+
+print(result1)
