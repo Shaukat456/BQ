@@ -19,18 +19,19 @@ cat1 = Cat("Tom", 5)
 
 # Example 2
 class Car:
-
     year = 2020
 
     def __init__(self, providedModel, providedAge):
         self.model = providedModel
         self.age = providedAge
+        self.year = 2021
 
     def drive(self):
         print(f"{self.model} is driving")
 
 
 car1 = Car("Toyota", 5)
+cat1.year
 
 
 # Example 3
@@ -214,7 +215,9 @@ class Dog(Animal):
 
 
 dog1 = Dog("Canis familiaris")
-dog1.bark()
+
+animal1 = Animal("something")
+animal1.eat()
 
 # In this example, Animal is the base class and Dog is the derived class. Dog inherits the attributes and methods of Animal, such as the species attribute and the eat method. It also defines its own method, bark.
 
@@ -229,10 +232,11 @@ class Vehicle:
 
 
 class Car(Vehicle):
-
     def honk(self):
         print("Car is honking")
 
+
+car1 = Car("Toyota")
 
 # In this example, Vehicle is the base class and Car is the derived class. Car inherits the attributes and methods of Vehicle, such as the model attribute and the drive method. It also defines its own method, honk.
 
@@ -262,6 +266,9 @@ class Cat(Animal):
     def speak(self):
         print("Cat is meowing")
 
+
+dog1 = Dog()
+cat1.speak()
 
 # In this example, Animal is the base class with a speak method that does nothing. Dog and Cat are derived classes that override the speak method with their own implementations. This allows objects of type Dog and Cat to be treated as objects of type Animal.
 

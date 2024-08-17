@@ -395,3 +395,18 @@ def remove_duplicates(lst):
 # Test the function
 unique_list = remove_duplicates(["apple", "banana", "apple", "cherry", "banana"])
 print(unique_list)
+
+
+# resubale sum function WE can use this function to add any number of numbers
+
+
+def add(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+
+
+# Test the function
+result = add(1, 2, 3, 4, 5)
+print(result)  
