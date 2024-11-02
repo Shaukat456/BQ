@@ -4,8 +4,6 @@ x = 5
 y = 10
 print(x + y)
 
-# answer: 15
-
 # A) 5
 # B) 10
 # C) 15
@@ -19,10 +17,6 @@ if x > 5:
 else:
     print("Goodbye")
 
-
-# answer: Hello
-
-
 # A) Hello
 # B) Goodbye
 # C) Nothing
@@ -34,9 +28,6 @@ x = 3
 y = 4
 print(x * y)
 
-
-# answer: 12
-
 # A) 7
 # B) 12
 # C) 1
@@ -47,8 +38,6 @@ print(x * y)
 x = True
 y = False
 print(x and y)
-
-# answer: False
 
 # A) True
 # B) False
@@ -63,8 +52,6 @@ if x % 2 == 0:
 else:
     print("Odd")
 
-
-# answer: Odd
 # A) Even
 # B) Odd
 # C) 1
@@ -77,8 +64,6 @@ b = 3
 c = a + b * 2
 print(c)
 
-# answer is 11
-
 # A) 11
 # B) 10
 # C) 8
@@ -90,9 +75,6 @@ x = 7
 y = 2
 z = x // y
 print(z)
-
-
-# answer is 3
 
 # A) 3.5
 # B) 3
@@ -107,10 +89,6 @@ if x > y and y > 0:
     print("Both conditions are True")
 else:
     print("At least one condition is False")
-
-
-# answer is Both conditions are True
-
 
 # A) Both conditions are True
 # B) At least one condition is False
@@ -127,10 +105,6 @@ elif x < 0:
 else:
     print("Zero")
 
-
-# answer is Positive
-
-
 # A) Positive
 # B) Negative
 # C) Zero
@@ -145,9 +119,6 @@ if x == y:
 else:
     print("Not equal")
 
-
-# answer is Not equal
-
 # A) Equal
 # B) Not equal
 # C) Nothing
@@ -159,9 +130,6 @@ x = 12
 y = 3
 z = x % y
 print(z)
-
-
-# answer is 0
 
 # A) 4
 # B) 3
@@ -177,9 +145,6 @@ if x > y or y > 10:
 else:
     print("Condition not met")
 
-
-# answer is Condition met
-
 # A) Condition met
 # B) Condition not met
 # C) Nothing
@@ -191,8 +156,6 @@ a = True
 b = False
 print(a or b)
 
-
-# answer is True
 # A) True
 # B) False
 # C) 1
@@ -210,9 +173,6 @@ if x < y and y > 5:
 else:
     print("Condition C met")
 
-
-# answer is Condition A met
-
 # A) Condition A met
 # B) Condition B met
 # C) Condition C met
@@ -228,9 +188,6 @@ if x + y > z:
 else:
     print("False")
 
-
-# answer is True
-
 # A) True
 # B) False
 # C) 1
@@ -244,9 +201,6 @@ if (x > y and x < 20) or (y == 5):
     print("Condition met")
 else:
     print("Condition not met")
-
-
-# answer is Condition met
 
 # A) Condition met
 # B) Condition not met
@@ -263,10 +217,6 @@ if x * y == z and x + y == 6:
 else:
     print("Incorrect")
 
-
-# answer is Correct
-
-
 # A) Correct
 # B) Incorrect
 # C) Nothing
@@ -280,10 +230,6 @@ c = 3
 result = a / b + c * (a - b)
 print(result)
 
-
-# answer is 16
-
-
 # A) 16
 # B) 6
 # C) 5
@@ -296,9 +242,6 @@ b = 2
 c = 3
 result = a / b + c * (a - b)
 
-
-# answer is 16
-
 # A) 16
 # B) 6
 # C) 5
@@ -308,11 +251,12 @@ result = a / b + c * (a - b)
 x = 10
 y = 5
 
-
 if x > y:
     print("x is greater than y")
 else:
     print("y is greater than x")
 
-
-# answer is x is greater than y
+# A) x is greater than y
+# B) y is greater than x
+# C) Nothing
+# D) Error
