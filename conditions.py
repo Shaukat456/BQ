@@ -90,8 +90,6 @@ else:
 # 6. Check if the number is negative and even
 # 7. Check if the number is negative and odd
 # 8. Check if the number is divisible by 5 or not
-
-
 age = 18
 if age >= 18:
 
