@@ -51,8 +51,6 @@ else:
         print("Negative and Even")
     else:
         print("Negative and Odd")
-
-
 # excercises to get a good understanding of if else statement
 
 # 1. Check if the number is divisible by 5 or not with solution
