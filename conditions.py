@@ -9,7 +9,6 @@
 # else:
 #     # block of code
 
-
 # give a number and check if it is even or odd
 num = 10
 
