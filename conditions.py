@@ -71,9 +71,8 @@ if number > 0:
 
 elif number < 0:
     print("Negative")
+
 # 3. Check if the number is even or odd
-
-
 number = 10
 
 if number % 2 == 0:
@@ -163,3 +162,39 @@ elif account_balance < 500 and (account_type == "current" or account_type == "sa
     print("Your balance is insufficient for a transaction.")
 else:
     print("Invalid input, please check your details and try again.")
+
+
+# Checking Grade Based on Marks
+
+marks = int(input("Enter your marks: "))
+
+if marks >= 50:
+    if marks >= 75:
+        print("Grade: A")
+    elif marks >= 60:
+        print("Grade: B")
+    else:
+        print("Grade: C")
+else:
+    print("Fail")
+
+
+# Checking Temperature and Weather Conditions
+temperature = int(input("Enter the temperature: "))
+weather = input("Is it raining? (yes/no): ").lower()
+
+if temperature > 30:
+    if weather == "yes":
+        print("It's hot and rainy.")
+    else:
+        print("It's hot and sunny.")
+elif temperature > 15:
+    if weather == "yes":
+        print("It's warm and rainy.")
+    else:
+        print("It's warm and pleasant.")
+else:
+    if weather == "yes":
+        print("It's cold and rainy.")
+    else:
+        print("It's cold and clear.")
