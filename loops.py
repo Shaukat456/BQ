@@ -1,7 +1,9 @@
-# when do we use while loop
-# Reading a file until the end is reached.
-# Waiting for a user input or an external event.
+# Loops in Python (for and while)
+# Loops help in repeating a block of code multiple times until a condition is met.
+# There are two main types of loops in Python:
 
+# for loop – Used when the number of iterations is known.
+# while loop – Used when the number of iterations is unknown, and it runs until a condition is false.
 
 # Example of a while loop
 i = 1
@@ -9,14 +11,6 @@ while i <= 5:
     print(i)
     i = i + 2
 
-
-# We use a for loop when we want to iterate over a sequence (like a list, tuple, dictionary, set, or string) or other iterable objects. Iterating through a sequence is called traversal. for loops are preferred when the number of iterations is known or finite.
-
-# Example use cases for a for loop:
-
-# Iterating over elements of a list, tuple, etc.
-# Running a loop a specific number of times using range().
-# Iterating over keys or values of a dictionary.
 
 listOfStudents = ["Alice", "Bob", "Charlie", "David", "Eve"]
 
@@ -83,3 +77,17 @@ else:
 
 
 # 4. Print numbers from 1 to 10 using a while loop
+
+
+# Feature	for Loop	while Loop
+# When to use?	When iterations are known	When condition-based looping is needed
+# Structure	Iterates over a sequence	Runs until a condition is false
+# Common Uses	Lists, strings, ranges, etc.	User input, waiting for events
+# Performance	Generally faster	Slightly slower (manual control)
+
+
+# Conclusion
+# Use for loops when looping over a known sequence (lists, tuples, etc.).
+# Use while loops when looping until a condition is met.
+# Use break to stop a loop early.
+# Use continue to skip an iteration.

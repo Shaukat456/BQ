@@ -1,297 +1,118 @@
-# explain lists in python
+# A list is an ordered, mutable (changeable) collection of elements in Python. It is created using square brackets []. Lists can contain different data types, such as numbers, strings, and even other lists. Lists support indexing, slicing, and various operations like adding, removing, and updating elements.
 
-# Lists are a collection of items in a particular order. You can make a list that includes the letters of the alphabet, the digits from 0-9, or the names of all the people in your family. You can put anything you want into a list, and the items in your list don’t have to be related in any particular way. Because a list usually contains more than one element, it’s a good idea to make the name of your list plural, such as letters, digits, or names.
 
+my_list = [1, 2, 3, "apple", "banana"]
+print(my_list)  # Output: [1, 2, 3, 'apple', 'banana']
 
-# Accessing Elements in a List
-# Lists are ordered collections, so you can access any element in a list by telling Python the position, or index, of the item desired. To access an element in a list, write the name of the list followed by the index of the item enclosed in square brackets.
 
-# The index of the first element in a list is 0, not 1. This is true in many programming languages, and the reason is that the index is an offset from the beginning of the list. The index of the second element is 1, the index of the third element is 2, and so forth. Negative indices refer to items at the end of the list; -1 refers to the last item, -2 refers to the second-to-last item, and so forth.
+# 📌 Key Features of Lists
+# ✅ Ordered – Elements maintain their position.
+# ✅ Mutable – Values can be changed after creation.
+# ✅ Can contain different data types – Integers, strings, etc.
+# ✅ Supports indexing and slicing – Like tuples.
 
-# The following example shows how to access the first and second items in a list of bicycles:
 
+#  Shopping List (Dynamic Data)
+# A shopping list is modifiable, so a list is the best choice.
+shopping_list = ["Milk", "Eggs", "Bread", "Butter"]
+shopping_list.append("Cheese")  # Adding an item
+shopping_list.remove("Eggs")  # Removing an item
+print(shopping_list)
 
-bicycles = ["trek", "redline", "specialized"]
 
-print(bicycles[0])
+#  Why use a list?
+# The list changes when we add or remove items.
 
-# print(bicycles[0].title())
 
+# To-Do List
+# A to-do list keeps track of tasks that change over time.
 
-# The output of this code is the first item in the list, 'trek', followed by the title() method, which capitalizes the first letter of the first item in the list. The output is as follows:
 
-# trek
-# Trek
+# tasks = ["Complete project", "Go to gym", "Read book"]
+# tasks.append("Call mom")  # Adding a new task
+# tasks.pop(1)  # Removing 'Go to gym'
+# print(tasks)
 
 
-# Index Positions Start at 0, Not 1
+# Student Marks in a Class
+# A teacher stores students' marks in a list because they need to be updated.
 
-# Python considers the first item in a list to be at position 0, not position 1. This is true of most programming languages, and the reason is that list indexes are offsets from the first position in the list. Here’s how you can access each element in a list:
+marks = [85, 90, 78, 92, 88]
+marks[2] = 80  # Updating a student's marks
+print(marks)
 
 
-bicycles = ["trek", "cannondale", "redline", "specialized"]
+# Social Media Notifications
+# A social media app stores notifications in a list, adding new ones at the end.
 
-print(bicycles[0])
+notifications = ["New friend request", "Message from Alice", "New comment on your post"]
+notifications.append("Someone liked your post")
+print(notifications)
 
-print(bicycles[1])
 
+#  Queue of Customers in a Bank
+# A bank uses a list to track customers in a queue.
 
-# Using Individual Values from a List
+queue = ["Customer1", "Customer2", "Customer3"]
+queue.pop(0)  # First customer is served
+print(queue)
 
-# You can use individual values from a list just as you would any other variable. For example, you can use f-strings to create a message based on a value from a list. Let’s try pulling the first bicycle from the list and composing a message using that value:
 
+#  Inventory Management in a Store
+# A store tracks stock in a list and updates it when items are sold or restocked.
 
-bicycles = ["trek", "cannondale", "redline", "specialized"]
 
-message = f"My first bicycle was a {bicycles[0].title()}."
+inventory = ["Laptop", "Mouse", "Keyboard"]
+inventory.append("Monitor")  # New item added
+inventory.remove("Mouse")  # Item sold out
+print(inventory)
 
-print(message)
 
+# Feature	List	Tuple
+# Mutable?	✅ Yes (Can be modified)	❌ No (Cannot be modified)
+# Faster?	❌ No (More memory)	✅ Yes (Less memory)
+# Use Case	Changing data (tasks, notifications)	Fixed data (coordinates, RGB values)
 
-# The output of this code is a simple message that includes the first item in the list, 'trek', with the first letter capitalized. The output is as follows:
 
+# Using a for Loop with Lists
+# Example 1: Print Each Item in a List (Basic Example)
 
-# My first bicycle was a Trek.
+fruits = ["apple", "banana", "cherry", "mango"]
 
+for fruit in fruits:
+    print(fruit)
 
-# more examples of lists
 
-# You can define a list by putting the items inside square brackets, separated by commas. For example, here’s how you can define a list of the first three even numbers:
+# tasks = ["Wake up", "Exercise", "Study", "Work"]
 
+for index, task in enumerate(tasks, start=1):
+    print(f"{index}. {task}")
 
-even_numbers = [2, 4, 6]
 
-print(even_numbers)
+# Filtering Even Numbers from a List
+numbers = [10, 15, 20, 25, 30, 35, 40]
+even_numbers = []
 
+for num in numbers:
+    if num % 2 == 0:
+        even_numbers.append(num)
 
-# The output of this code is a list of the first three even numbers. The output is as follows:
+print("Even numbers:", even_numbers)
 
 
-# [2, 4, 6]
+# Sorting a List (Bubble Sort Algorithm)
+numbers = [64, 34, 25, 12, 22, 11, 90]
+n = len(numbers)
 
+for i in range(n):
+    for j in range(0, n - i - 1):
+        if numbers[j] > numbers[j + 1]:
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
-# use loops with lists
+print("Sorted list:", numbers)
 
-# You can use a for loop to work with each individual item in a list. For example, here’s how you can print each item in a list of even numbers:
 
-
-even_numbers = [2, 4, 6, "SHAUKAT", True]
-
-even_numbers[1] = 5
-
-
-for number in even_numbers:
-
-    print(number)
-
-
-lisst = [["shaukat, ahmed"], [1, 3, 5]]
-
-
-for name in lisst:
-    print(name)
-
-
-# The output of this code is each item in the list of even numbers printed on a separate line. The output is as follows:
-
-
-# use nested lists with examples
-
-
-# A list can contain any mix of Python data types, including other lists. For example, here’s how you can define a list of lists:
-
-
-bicycles = ["trek", "cannondale", "redline", "specialized"]
-
-cars = ["audi", "bmw", "subaru", "toyota"]
-
-
-vehicles = [bicycles, cars]
-
-print(vehicles)
-
-
-# The output of this code is a list of lists. The output is as follows:
-
-
-# [['trek', 'cannondale', 'redline', 'specialized'], ['audi', 'bmw', 'subaru', 'toyota']]
-
-
-# You can access an individual item in a list of lists by giving two sets of square brackets. For example, here’s how you can access the first item in the list of bicycles:
-
-
-bicycles = ["trek", "cannondale", "redline", "specialized"]
-
-cars = ["audi", "bmw", "subaru", "toyota"]
-
-vehicles = [bicycles, cars]
-
-print(vehicles[0][0])
-
-
-# use loops with nested lists
-
-# You can use a for loop to work with each individual item in a list of lists. For example, here’s how you can print each item in a list of lists:
-
-
-bicycles = ["trek", "cannondale", "redline", "specialized"]
-
-cars = ["audi", "bmw", "subaru", "toyota"]
-
-vehicles = [bicycles, cars]
-
-for vehicle in vehicles:
-
-    print(vehicle)
-
-
-# The output of this code is each list in the list of lists printed on a separate line. The output is as follows:
-
-
-# ['trek', 'cannondale', 'redline', 'specialized']
-# ['audi', 'bmw', 'subaru', 'toyota']
-
-
-# You can use a for loop to work with each individual item in a list of lists. For example, here’s how you can print each item in a list of lists:
-
-
-bicycles = ["trek", "cannondale", "redline", "specialized"]
-
-cars = ["audi", "bmw", "subaru", "toyota"]
-
-vehicles = [bicycles, cars]
-
-for vehicle in vehicles:
-
-    for item in vehicle:
-
-        print(item)
-
-
-# use if else with for loops with lists
-
-# You can use an if statement to work with specific items in a list. For example, here’s how you can print each item in a list of lists, but print a message if the item is 'bmw':
-
-bicycles = ["trek", "cannondale", "redline", "specialized"]
-
-cars = ["audi", "bmw", "subaru", "toyota"]
-
-vehicles = [bicycles, cars]
-
-
-for vehicle in vehicles:
-
-    for item in vehicle:
-
-        if item == "bmw":
-
-            print(f"I love {item.upper()} cars!")
-
-        else:
-
-            print(item)
-
-
-# use arithmetic operators and logical operator with lists in for loop
-
-# You can use arithmetic operators and logical operators to work with items in a list. For example, here’s how you can print each item in a list of lists, but print a message if the item is 'bmw' and another message if the item is 'subaru':
-
-bicycles = ["trek", "cannondale", "redline", "specialized"]
-
-cars = ["audi", "bmw", "subaru", "toyota"]
-
-
-vehicles = [bicycles, cars]
-
-
-for vehicle in vehicles:
-
-    for item in vehicle:
-
-        if item == "bmw":
-
-            print(f"I love {item.upper()} cars!")
-
-        elif item == "subaru":
-
-            print(f"I love {item.upper()} cars, but I also like {item.upper()} cars.")
-
-        else:
-
-            print(item)
-
-
-# Modifying Elements in a List
-
-# The syntax for modifying an element is similar to the syntax for accessing an element in a list. To change an element, use the name of the list followed by the index of the element you want to change, and then provide the new value you want that item to have. For example, let’s say we have a list of motorcycles, and the first item in the list is 'honda'. Here’s how you can change this value:
-
-
-motorcycles = ["honda", "yamaha", "suzuki"]
-
-print(motorcycles)
-
-
-motorcycles[0] = "ducati"
-
-print(motorcycles)
-
-
-# COMMON LISTS METHODS  IN PYTHON
-
-# Python includes a number of built-in methods that you can use on lists. Here are a few of the most common ones:
-
-# append(): Add an item to the end of the list.
-# insert(): Add an item at any position in the list.
-# del: Remove an item from any position in the list.
-# pop(): Remove an item from the end of the list.
-# remove(): Remove an item by value.
-# sort(): Sort a list.
-# reverse(): Reverse the order of a list.
-
-
-# Adding Elements to a List
-
-# You can add elements to the end of a list, or you can insert them at a specific position. For example, let’s say we have a list of motorcycles, and we want to add a new motorcycle to the end of the list. Here’s how you can add the new motorcycle 'ducati' to the end of the list:
-
-
-motorcycles = ["honda", "yamaha", "suzuki"]
-
-print(motorcycles)
-
-
-motorcycles.append("ducati")
-
-
-print(motorcycles)
-
-
-# using list with while loop
-
-# You can use a while loop to work with a list. For example, here’s how you can remove items from a list until it’s empty:
-
-
-motorcycles = ["honda", "yamaha", "suzuki", "honda"]
-
-print(motorcycles)
-
-motorcycles.remove("honda")
-
-
-# The output of this code is each item in the list of motorcycles printed on a separate line, starting with the last item in the list. The output is as follows:
-
-
-# use list in real world examples
-
-# Lists are used in many real-world applications. For example, you can use a list to store the names of all the people in your family, the make and model of all the cars in a parking lot, or the names of all the countries in the world. You can use a list to store any number of items, and you can access and modify these items in many different ways. Lists are a powerful tool in Python, and they’re used in many different types of programs.
-
-
-# use list with functions
-
-# You can use a list as an argument in a function. For example, here’s how you can pass a list of motorcycles to a function that prints each item in the list:
-
-
-# def print_motorcycles(motorcycles):
-
-#     for motorcycle in motorcycles:
-
-#         print(motorcycle)
+# Conclusion
+# Use for loops when you know how many times you need to iterate.
+# Use while loops when you don't know the exact number of iterations (e.g., processing user input).
+# Nested loops are useful for 2D lists (tables, matrices, grids, etc.).
