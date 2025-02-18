@@ -11,7 +11,7 @@
 # The following example shows how to access the first and second items in a list of bicycles:
 
 
-bicycles = ["trek", "cannondale", "redline", "specialized"]
+bicycles = ["trek", "redline", "specialized"]
 
 print(bicycles[0])
 
