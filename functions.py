@@ -259,24 +259,6 @@ print(result)  # Output: True
 
 # sequence[start:stop:step]
 
-s = "hello"
-
-
-# Extract "ell" (from index 1 to index 4)
-print(s[0:2])  # Output: "ell"
-
-# Extract "hello" (from start to end)
-print(s[:])  # Output: "hello"
-
-# Extract "hel" (from start to index 3)
-print(s[:3])  # Output: "hel"
-
-# Extract "lo" (from index 3 to end)
-print(s[3:])  # Output: "lo"
-
-# Reverse the string
-print(s[::-1])  # Output: "olleh"
-
 
 def is_palindrome(s):
     # Reverse the string using slicing
@@ -409,4 +391,4 @@ def add(*args):
 
 # Test the function
 result = add(1, 2, 3, 4, 5)
-print(result)  
+print(result)
