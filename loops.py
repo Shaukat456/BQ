@@ -90,3 +90,33 @@ else:
 # Use while loops when looping until a condition is met.
 # Use break to stop a loop early.
 # Use continue to skip an iteration.
+
+
+# Print table of 2 using for loop
+for i in range(1, 11):
+    print(f"2 x {i} = {2*i}")
+
+
+# Print table of 2 using while loop
+i = 1
+while i <= 10:
+    print(f"2 x {i} = {2*i}")
+    i += 1
+
+
+# use for loop to make a list of even numbers from 1 to 10
+even_numbers = []
+for i in range(1, 11):
+    if i % 2 == 0:
+        even_numbers.append(i)
+
+print(even_numbers)
+
+
+# use while loop to make a list of even numbers from 1 to 10
+even_numbers = []
+i = 1
+while i <= 10:
+    if i % 2 == 0:
+        even_numbers.append(i)
+    i += 1
