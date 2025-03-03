@@ -64,16 +64,7 @@ def greet(name="World"):
 
 
 message = greet("Alice")
-
-
 print(message)
-
-
-message = greet()
-
-
-print(message)
-
 
 # example of a function with keyword arguments
 
@@ -83,14 +74,10 @@ def greet(name, greeting="Hello"):
 
 
 message = greet("Alice", greeting="Hi")
-
-
 print(message)
 
 
 message = greet("Bob")
-
-
 print(message)
 
 
