@@ -67,18 +67,6 @@ else:
     print("Loop completed successfully")
 
 
-# exercies to get a good understanding of loops
-
-# 1. Print numbers from 1 to 10 using a for loop
-
-# 2. Print even numbers from 1 to 10 using a for loop
-
-# 3. Print odd numbers from 1 to 10 using a for loop
-
-
-# 4. Print numbers from 1 to 10 using a while loop
-
-
 # Feature	for Loop	while Loop
 # When to use?	When iterations are known	When condition-based looping is needed
 # Structure	Iterates over a sequence	Runs until a condition is false
@@ -120,3 +108,13 @@ while i <= 10:
     if i % 2 == 0:
         even_numbers.append(i)
     i += 1
+
+
+# Enumerate in Python
+
+# The enumerate() function is used to add a counter to an iterable and return it as an enumerate object. It is often used in loops to keep track of the index of the current item being processed.
+
+# Example of using enumerate() with a for loop
+listOfStudents = ["Alice", "Bob", "Charlie", "David", "Eve"]
+for index, student in enumerate(listOfStudents):
+    print(f"Student {index + 1}: {student}")
