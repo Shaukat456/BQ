@@ -108,14 +108,6 @@ def greet(**kwargs):
 
 
 message = greet(name="Alice", greeting="Hi")
-
-
-print(message)
-
-
-message = greet(name="Bob")
-
-
 print(message)
 
 
@@ -237,7 +229,7 @@ def contains_substring(main_str, sub_str):
 
 
 # Test the function
-result = contains_substring("Hello, world!", "pppo")
+result = contains_substring("Hello, world!", "somethinglikethis")
 print(result)  # Output: True
 
 
@@ -290,10 +282,8 @@ string1 = "shaukat"
 
 
 def count_words(s):
-    # WE split the string into words
     words = s.split()
 
-    # We count the number of words
     length = len(words)
     return length
 
