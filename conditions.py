@@ -198,3 +198,34 @@ else:
         print("It's cold and rainy.")
     else:
         print("It's cold and clear.")
+
+
+# Checking Prime Numbers
+
+num = 7
+is_prime = True
+
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print("Prime number")
+    else:
+        print("Not a prime number")
+else:
+    print("Not a prime number")
+
+
+# Example 1: Checking Age for a Discount (Using and)
+
+student = {"name": "Alice", "scores": {"math": 90, "science": 85}}
+
+if "scores" in student:
+    if "math" in student["scores"]:
+        print(f"Math score: {student['scores']['math']}")
+    else:
+        print("Math score not found")
+else:
+    print("No scores available")
