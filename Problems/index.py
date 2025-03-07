@@ -234,3 +234,24 @@ while i < n:
     i += 1
 
 print("Sorted list:", numbers)
+
+
+# Length of a string using for loop
+
+text = input("Enter a string: ")
+length = 0
+for char in text:
+    length += 1
+print(f"The length of the string is: {length}")
+
+
+# Length of a string using while loop
+text = input("Enter a string: ")
+length = 0
+i = 0
+
+while i < len(text):
+    length += 1
+    i += 1
+
+print(f"The length of the string is: {length}")
