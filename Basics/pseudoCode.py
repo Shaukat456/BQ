@@ -51,13 +51,13 @@ num2 = float(input("Enter second number: "))
 num3 = float(input("Enter third number: "))
 
 # Find the maximum number
-# if num1 > num2 and num1 > num3:
-#     max_num = num1
-# elif num2 > num1 and num2 > num3:
-#     max_num = num2
-# else:
-#     max_num = num3
+if num1 > num2 and num1 > num3:
+    max_num = num1
+elif num2 > num1 and num2 > num3:
+    max_num = num2
+else:
+    max_num = num3
 
-# # Print the maximum number
-# print("The maximum number is:", max_num)
+# Print the maximum number
+print("The maximum number is:", max_num)
 # # End of the program
