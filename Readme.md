@@ -28,38 +28,48 @@ Welcome to this comprehensive Python learning repository! This project is design
 
 ```
 /
-├── 📂 Algorithms/
-│   ├── 📂 Divide-And-Conquer/
-│   │   └── 📄 algo.py
-│   ├── 📄 Greedy-Algorithms.py
-│   │   └── 📄 index.py
-│   ├── 📂 Searching/
-│   │   └── 📄 Searching-Algorithms.py
-│   ├── 📂 Sorting/
-│   │   └── 📄 Sorting-Algorithms.py
-│   └── 📄 readme.md
-├── 📂 Data-Structures/
-│   ├── 📂 Linear/
-│   │   ├── 📄 Array.py
-│   │   ├── 📄 Linear-DS.py
-│   │   ├── 📄 LinkedList.py
-│   │   └── 📄 Stack.py
-│   └── 📄 readme.md
-├── 📂 DataTypes/
-├── 📂 Functions/
-│   ├── 📄 commonFn.py
-│   └── 📄 functions.py
-├── 📂 Loops/
-│   └── 📄 loops.py
-├── 📂 Problems/
-├── 📂 Projects/
-├── 📄 File-Operations.py
-├── 📄 OOP.py
-├── 📄 Readme.md
-├── 📄 arithmetic_operations.py
-├── 📄 conditions.py
-├── 📄 pseudoCode.py
-└── 📄 variables.py
+│   └── 📄 Readme.md
+│   └── 📄 update_readme.py
+│   ├── 📂 Algorithms/
+│   │   └── 📄 readme.md
+│   │   ├── 📂 Divide-And-Conquer/
+│   │   │   └── 📄 algo.py
+│   │   ├── 📂 Greedy-Algorithms.py/
+│   │   │   └── 📄 index.py
+│   │   ├── 📂 Searching/
+│   │   │   └── 📄 Searching-Algorithms.py
+│   │   ├── 📂 Sorting/
+│   │   │   └── 📄 Sorting-Algorithms.py
+│   ├── 📂 Basics/
+│   │   └── 📄 File-Operations.py
+│   │   └── 📄 OOP.py
+│   │   └── 📄 arithmetic_operations.py
+│   │   └── 📄 conditions.py
+│   │   └── 📄 pseudoCode.py
+│   │   └── 📄 variables.py
+│   │   ├── 📂 DataTypes/
+│   │   │   └── 📄 DataTypes.py
+│   │   │   └── 📄 dictionary.py
+│   │   │   └── 📄 lists.py
+│   │   │   └── 📄 tuple.py
+│   │   ├── 📂 Functions/
+│   │   │   └── 📄 commonFn.py
+│   │   │   └── 📄 functions.py
+│   │   ├── 📂 Loops/
+│   │   │   └── 📄 loops.py
+│   │   ├── 📂 Problems/
+│   │   │   └── 📄 index.py
+│   ├── 📂 Data-Structures/
+│   │   └── 📄 readme.md
+│   │   ├── 📂 Linear/
+│   │   │   └── 📄 Array.py
+│   │   │   └── 📄 Linear-DS.py
+│   │   │   └── 📄 LinkedList.py
+│   │   │   └── 📄 Stack.py
+│   ├── 📂 Projects/
+│   │   └── 📄 Calculator.py
+│   │   └── 📄 TempConv.py
+│   │   └── 📄 WeightCon.py
 ```
 
 ## ✨ Features
