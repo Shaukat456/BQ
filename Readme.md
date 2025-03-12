@@ -6,15 +6,18 @@
 ![Data Structures](https://img.shields.io/badge/Data_Structures-6A0DAD?style=for-the-badge&logo=buffer&logoColor=white)
 ![Algorithms](https://img.shields.io/badge/Algorithms-00FFFF?style=for-the-badge&logo=thealgorithms&logoColor=black)
 
+[![GitHub](https://img.shields.io/badge/GitHub-shaukat456-black?style=flat-square&logo=github)](https://github.com/shaukat456)
+[![Website](https://img.shields.io/badge/Website-shaukatsohail.vercel.app-blue?style=flat-square&logo=vercel)](https://shaukatsohail.vercel.app)
+
 <img src="https://img.shields.io/badge/STATUS-EXPERIMENTAL-brightgreen?style=for-the-badge" alt="Experimental">
 
 </div>
 
 ## 👨‍🔬 "WELCOME TO MY LABORATORY!"
 
-_Greetings, test subjects—I mean, esteemed learners! I am your host, the Mad Scientist of Programming! This is my magnificent collection of Python experiments! MWAHAHAHA!_
+_Greetings, Boss! Welcome to my magnificent collection of Python experiments! xD_
 
-_Ahem... excuse me. I get carried away sometimes. But make no mistake! By the time you leave this repository, your mind will be buzzing with the arcane knowledge of Python programming!_
+_By the time you leave this repository, your mind will be buzzing with the arcane knowledge of Python programming!_
 
 _Now, let us begin our descent into the world of Python! Follow me, and do try not to touch anything without wearing proper coding gloves!_
 
@@ -27,6 +30,7 @@ _Now, let us begin our descent into the world of Python! Follow me, and do try n
 | [🗺️ Learning Path](#-learning-path)               | Structured journey from novice to master |
 | [💻 Practice Projects](#-practice-projects)       | Apply your newfound powers               |
 | [📚 Resources](#-resources)                       | Additional learning materials            |
+| [👨‍💻 About the Author](#-about-the-author)         | The mind behind the madness              |
 
 ## 🧮 Repository Structure
 
@@ -73,7 +77,7 @@ _Now, let us begin our descent into the world of Python! Follow me, and do try n
     └── 📄 WeightCon.py              # Weight conversion utility
 ```
 
-_"BEHOLD! My meticulously organized laboratory! Each chamber contains experimental materials crucial to your transformation into a coding genius! Mind the signs and follow the learning path for optimal results!"_
+_"BEHOLD! My meticulously organized laboratory! Each chamber contains experimental materials crucial to your transformation into a coding genius! Mind the signs and follow the learning path for optimal results, Boss! xD"_
 
 ## 🚀 Getting Started
 
@@ -88,7 +92,7 @@ _"BEHOLD! My meticulously organized laboratory! Each chamber contains experiment
 1. **Clone this repository of forbidden knowledge**:
 
    ```bash
-   git clone https://github.com/yourusername/python-learning-repo.git
+   git clone https://github.com/shaukat456/python-learning-repo.git
    cd python-learning-repo
    ```
 
@@ -102,7 +106,7 @@ _"BEHOLD! My meticulously organized laboratory! Each chamber contains experiment
 
 ### Level 1: Initiation (Basics)
 
-_"First, we must understand the fundamental particles of our Python universe!"_
+_"First, we must understand the fundamental particles of our Python universe, Boss! xD"_
 
 1. **Variables & Data Types**
 
@@ -160,7 +164,7 @@ _"Here we create SOPHISTICATED SYSTEMS! Powerful algorithms and data structures!
 
 ## 💻 Practice Projects
 
-_"The `Projects/` chamber contains FUNCTIONING PROTOTYPES! Study them, modify them, improve them if you dare!"_
+_"The `Projects/` chamber contains FUNCTIONING PROTOTYPES! Study them, modify them, improve them if you dare, Boss! xD"_
 
 Each project includes:
 
@@ -254,12 +258,6 @@ _"Even mad scientists consult the ancient tomes of knowledge!"_
 - [Python Official Documentation](https://docs.python.org/3/) - _"The original sacred texts!"_
 - [Python Standard Library](https://docs.python.org/3/library/) - _"Built-in tools for your experiments!"_
 
-### Interactive Learning
-
-- [Codecademy Python Course](https://www.codecademy.com/learn/learn-python-3) - _"Interactive training chambers!"_
-- [LeetCode](https://leetcode.com/) - _"Test your algorithmic prowess!"_
-- [HackerRank](https://www.hackerrank.com/domains/python) - _"Compete against other mad scientists!"_
-
 ### Visualization Tools
 
 - [Python Tutor](http://pythontutor.com/) - _"See your code execute step by step!"_
@@ -267,7 +265,7 @@ _"Even mad scientists consult the ancient tomes of knowledge!"_
 
 ## 🤝 Contributing to the Laboratory
 
-_"Want to contribute to my grand experiments? I welcome collaborators with innovative ideas!"_
+_"Want to contribute to my grand experiments? I welcome collaborators with innovative ideas, Boss! xD"_
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-experiment`)
@@ -282,9 +280,24 @@ _"Want to contribute to my grand experiments? I welcome collaborators with innov
 - Include tests for your new features
 - Update documentation to reflect changes
 
+## 👨‍💻 About the Author
+
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/shaukat456" alt="Shaukat Sohail" width="150" style="border-radius: 50%;">
+  <h3>Shaukat Sohail</h3>
+  
+  [![Portfolio](https://img.shields.io/badge/Portfolio-shaukatsohail.vercel.app-brightgreen?style=flat-square&logo=vercel)](https://shaukatsohail.vercel.app)
+  [![GitHub](https://img.shields.io/badge/GitHub-shaukat456-black?style=flat-square&logo=github)](https://github.com/shaukat456)
+  
+</div>
+
+_"When not in his laboratory, Shaukat creates elegant solutions to complex problems. With expertise in Python and web technologies, he's committed to sharing knowledge and building useful tools for the community."_
+
+_"Investigate his other experiments on his [personal website](https://shaukatsohail.vercel.app) or collaborate with him on GitHub!"_
+
 ## ⚠️ Safety Warnings
 
-_"Even in a mad scientist's lab, safety is paramount!"_
+_"Even in a mad scientist's lab, safety is paramount, Boss! xD"_
 
 - Always create backups before experimenting with your own code
 - Test potentially destructive operations in a controlled environment
@@ -295,6 +308,6 @@ _"Even in a mad scientist's lab, safety is paramount!"_
 <div align="center">
   <p><i>"In code, there are no failures—only unexpected results!"</i></p>
   
-  ![Lab Visitors](https://visitor-badge.laobi.icu/badge?page_id=yourusername.python-learning-repo)
-  [![Star this lab](https://img.shields.io/github/stars/yourusername/python-learning-repo?style=social)](https://github.com/yourusername/python-learning-repo)
+  ![Lab Visitors](https://visitor-badge.laobi.icu/badge?page_id=shaukat456.python-learning-repo)
+  [![Star this lab](https://img.shields.io/github/stars/shaukat456/python-learning-repo?style=social)](https://github.com/shaukat456/python-learning-repo)
 </div>
