@@ -130,4 +130,149 @@ print(stack.peek())  # Output: 20
 # | **Deque (`collections.deque`)** | O(1) | O(1) | More efficient than list |
 # | **Linked List** | O(1) | O(1) | No resizing issues |
 
-# Would you like to explore **real-world use cases of stacks** next? 😊
+
+### **📌 Why Do We Implement Stacks Using Arrays or Linked Lists?**
+
+# A **stack** is an **abstract data type (ADT)** that follows **LIFO (Last In, First Out)** ordering.
+# Since **stacks are not built into Python**, we implement them using **arrays (lists in Python) or linked lists**.
+
+# ---
+
+## **📌 What Does It Mean to "Implement a Stack Using Arrays or Linked Lists"?**
+# It means we use either **arrays** or **linked lists** as the **underlying data structure** to manage the stack operations (**push, pop, peek**).
+
+# ✅ **Stack is just a concept** → It needs a **physical storage mechanism**, which can be:
+# ✔ **Array-based stack** (Fixed-size, faster access)
+# ✔ **Linked list-based stack** (Dynamic size, no wasted memory)
+
+# ---
+
+# # **📌 Stack Implementation Using Arrays (Python List)**
+# In Python, we can use a **list** as an array to implement a stack:
+
+
+# ### **✅ Example: Stack Using Array (Python List)**
+# ```python
+class StackArray:
+    def __init__(self):
+        self.stack = []  # Using a list as an array
+
+    def push(self, item):
+        self.stack.append(item)  # Insert at the end (top of stack)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.stack.pop()  # Remove last element
+        return "Stack is empty"
+
+    def peek(self):
+        if not self.is_empty():
+            return self.stack[-1]  # Get last element
+        return "Stack is empty"
+
+    def is_empty(self):
+        return len(self.stack) == 0
+
+
+stack = StackArray()
+stack.push(10)
+stack.push(20)
+print(stack.pop())  # Output: 20
+print(stack.peek())  # Output: 10
+### **🔹 How It Works?**
+# - `push(item)`: Uses `.append()` to add items at the **end** (top).
+# - `pop()`: Uses `.pop()` to remove the **last item**.
+# - `peek()`: Accesses the **last item** without removing it.
+
+# ### **⏳ Time Complexity (Array-Based Stack)**
+# | Operation | Complexity |
+# |-----------|------------|
+# | **Push** (append at end) | **O(1)** |
+# | **Pop** (remove from end) | **O(1)** |
+# | **Peek** (access last item) | **O(1)** |
+
+# ---
+
+# **📌 Stack Implementation Using Linked List**
+# Instead of an array, we use **nodes** (linked list elements) to form the stack.
+
+
+# ### **✅ Example: Stack Using Linked List**
+# ```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None  # Pointer to the next node
+
+
+class StackLinkedList:
+    def __init__(self):
+        self.top = None  # Stack is initially empty
+
+    def push(self, item):
+        new_node = Node(item)  # Create new node
+        new_node.next = self.top  # New node points to old top
+        self.top = new_node  # New node becomes the top
+
+    def pop(self):
+        if self.is_empty():
+            return "Stack is empty"
+        popped_data = self.top.data
+        self.top = self.top.next  # Move top pointer to next node
+        return popped_data
+
+    def peek(self):
+        if self.is_empty():
+            return "Stack is empty"
+        return self.top.data
+
+    def is_empty(self):
+        return self.top is None
+
+
+stack = StackLinkedList()
+stack.push(10)
+stack.push(20)
+print(stack.pop())  # Output: 20
+print(stack.peek())  # Output: 10
+### **🔹 How It Works?**
+# - **Every element (node) is linked** to the next element.
+# - **`push(item)`**: Adds a new **node at the top**.
+# - **`pop()`**: Removes the **top node**.
+
+# ### **⏳ Time Complexity (Linked List-Based Stack)**
+# | Operation | Complexity |
+# |-----------|------------|
+# | **Push** (insert at top) | **O(1)** |
+# | **Pop** (remove from top) | **O(1)** |
+# | **Peek** (access top) | **O(1)** |
+
+# ---
+
+# # **📌 Why Use Arrays or Linked Lists for Stacks?**
+# | Feature | **Array-Based Stack** | **Linked List-Based Stack** |
+# |---------|----------------------|----------------------|
+# | **Size** | Fixed (can be resized) | Dynamic (grows as needed) |
+# | **Speed** | Fast (O(1) for push/pop) | Slightly slower (O(1) but requires extra memory for pointers) |
+# | **Memory Usage** | May waste memory (preallocated space) | Uses extra memory (pointers for each node) |
+# | **Best When?** | When stack size is known | When stack size is unknown |
+
+# ---
+
+# # **📌 When to Use Which Implementation?**
+# ✅ **Use Array-Based Stack When:**
+# ✔ You know the **maximum size** in advance.
+# ✔ You want **fast access** to elements.
+# ✔ Memory is not a major concern.
+
+# ✅ **Use Linked List-Based Stack When:**
+# ✔ You **don’t know** how many elements will be stored.
+# ✔ You **want to avoid resizing overhead** of arrays.
+# ✔ You don’t mind the **extra memory** for pointers.
+
+# ---
+
+# ## **📌 Summary**
+# ✔ **A stack is an abstract data type (ADT), and we implement it using either** **arrays** (Python lists) or **linked lists**.
+# ✔ **Both implementations support** push, pop, and peek **operations** efficiently (**O(1)**).
+# ✔ **Arrays are faster** (direct memory access), while **linked lists are more flexible** (dynamic size).
