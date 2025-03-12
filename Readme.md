@@ -1,4 +1,4 @@
-# 🚀 Mad Scientist's Guide to Python
+# Mad Scientist's Guide to Python
 
 <div align="center">
   
