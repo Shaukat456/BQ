@@ -734,6 +734,6 @@ _"Even in a mad scientist's lab, safety is paramount, Boss! xD"_
 <div align="center">
   <p><i>"In code, there are no failures—only unexpected results!"</i></p>
   
-  ![Lab Visitors](https://visitor-badge.laobi.icu/badge?page_id=shaukat456.Python)
-  [![Star this lab](https://img.shields.io/github/stars/shaukat456/Python?style=social)](https://github.com/shaukat456/Python-repo)
+  ![Lab Visitors](https://visitor-badge.laobi.icu/badge?page_id=shaukat456.python-learning-repo)
+  [![Star this lab](https://img.shields.io/github/stars/shaukat456/python-learning-repo?style=social)](https://github.com/shaukat456/python-learning-repo)
 </div>
