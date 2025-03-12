@@ -1,3 +1,18 @@
+# simplest way to add two lists element-wise in Python with named indices
+
+# Define lists
+list1 = [1, 2, 3, 4, 5]
+list2 = [10, 20, 30, 40, 50]
+indices = ["A", "B", "C", "D", "E"]
+
+# Perform element-wise addition
+result = {}
+for i in range(len(list1)):
+    result[indices[i]] = list1[i] + list2[i]
+
+# Print the result
+print(result)
+
 # Prime Number using for loop
 
 num = int(input("Enter a number: "))
