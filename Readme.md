@@ -1,4 +1,4 @@
-# 🚀 Python Learning Repository
+# 🚀 Mad Scientist's Guide to Python
 
 <div align="center">
   
