@@ -6,7 +6,8 @@
 ![Data Structures](https://img.shields.io/badge/Data_Structures-FF6F00?style=for-the-badge&logo=buffer&logoColor=white)
 ![Algorithms](https://img.shields.io/badge/Algorithms-00BCD4?style=for-the-badge&logo=thealgorithms&logoColor=white)
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=shaukat456&show_icons=true&theme=radical)](https://github.com/shaukat456)
+[![GitHub followers](https://img.shields.io/github/followers/shaukat456?style=social)](https://github.com/shaukat456)
+[![Website](https://img.shields.io/badge/Website-shaukatsohail.vercel.app-blue?style=flat-square&logo=vercel)](https://shaukatsohail.vercel.app)
 
 </div>
 
@@ -19,8 +20,10 @@ Welcome to this comprehensive Python learning repository! This project is design
 - [Getting Started](#-getting-started)
 - [Learning Path](#-learning-path)
 - [Projects](#-projects)
+- [Auto-Update Folder Structure](#-auto-update-folder-structure)
 - [Contributing](#-contributing)
 - [Resources](#-resources)
+- [About the Author](#-about-the-author)
 
 ## 📁 Repository Structure
 
@@ -69,6 +72,7 @@ Welcome to this comprehensive Python learning repository! This project is design
 - **📊 Visual Explanations**: Diagrams and visualizations for complex topics
 - **📝 Problem Sets**: Curated problems to test your understanding
 - **🌱 Progressive Learning Path**: Structured content from beginner to advanced
+- **🔄 Auto-Updating Structure**: Script included to keep README in sync with your repo
 
 ## 🚀 Getting Started
 
@@ -127,6 +131,64 @@ The `Projects/` directory contains real-world applications that demonstrate the 
 - **Algorithm Visualizers**: See sorting and searching algorithms in action
 - **And more!**: Explore the directory for additional projects
 
+## 🔄 Auto-Update Folder Structure
+
+Use the script below to automatically update your README with the current folder structure:
+
+````python
+import os
+import re
+
+def generate_tree(startpath, ignore_patterns=None):
+    if ignore_patterns is None:
+        ignore_patterns = ['.git', '__pycache__', '.vscode', '.idea']
+
+    output = []
+    prefix = '/'
+    output.append(prefix)
+
+    for root, dirs, files in os.walk(startpath):
+        # Skip ignored directories
+        dirs[:] = [d for d in dirs if d not in ignore_patterns]
+
+        level = root.replace(startpath, '').count(os.sep)
+        indent = '│   ' * level
+
+        if level > 0:
+            subdir = os.path.basename(root)
+            output.append(f"{indent}├── 📂 {subdir}/")
+
+        sub_indent = '│   ' * (level + 1)
+        for f in sorted(files):
+            if f not in ignore_patterns and not f.startswith('.'):
+                output.append(f"{sub_indent}└── 📄 {f}")
+
+    return '\n'.join(output)
+
+def update_readme(readme_path, tree_content):
+    with open(readme_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+
+    # Find and replace the structure section
+    pattern = r'```\n/(.*?)\n```'
+    replacement = f'```\n{tree_content}\n```'
+    updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+    with open(readme_path, 'w', encoding='utf-8') as file:
+        file.write(updated_content)
+
+    print("README.md has been updated with the current folder structure!")
+
+if __name__ == "__main__":
+    # Generate the folder tree
+    tree = generate_tree(".")
+
+    # Update the README
+    update_readme("README.md", tree)
+````
+
+Save this as `update_readme.py` and run it whenever you want to update the folder structure in your README.
+
 ## 🤝 Contributing
 
 Contributions are welcome! If you'd like to add examples, fix bugs, or improve documentation:
@@ -144,10 +206,25 @@ Contributions are welcome! If you'd like to add examples, fix bugs, or improve d
 - [Visualization of Data Structures](https://visualgo.net/)
 - [Algorithms Explained](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
 
+## 👨‍💻 About the Author
+
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/shaukat456" alt="Shaukat Sohail" width="150" style="border-radius: 50%;">
+  <h3>Shaukat Sohail</h3>
+  
+  [![Portfolio](https://img.shields.io/badge/Portfolio-shaukatsohail.vercel.app-brightgreen?style=flat-square&logo=vercel)](https://shaukatsohail.vercel.app)
+  [![GitHub](https://img.shields.io/badge/GitHub-shaukat456-black?style=flat-square&logo=github)](https://github.com/shaukat456)
+  
+</div>
+
+Shaukat is a passionate developer focused on creating elegant solutions to complex problems. With expertise in Python and web technologies, he's committed to sharing knowledge and building useful tools for the community.
+
+Check out more of his work on his [personal website](https://shaukatsohail.vercel.app) or connect with him on GitHub!
+
 ---
 
 <div align="center">
-  <p>Made with ❤️ by <a href="https://github.com/shaukat456">Shaukat</a></p>
+  <p>Made with ❤️ by <a href="https://github.com/shaukat456">Shaukat Sohail</a></p>
   
   ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=shaukat456.python-learning-repo)
   [![Star this repo](https://img.shields.io/github/stars/shaukat456/python-learning-repo?style=social)](https://github.com/shaukat456/python-learning-repo)
