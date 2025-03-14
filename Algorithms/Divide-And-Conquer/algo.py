@@ -305,5 +305,3 @@ print("Sorted names:", sorted_names)
 
 # ### **🚀 Conclusion**
 # **Divide & Conquer algorithms are the backbone of modern technology.** Whether you’re **searching on Google, shopping on Amazon, or using AI**, you’re unknowingly using these algorithms **every day**!
-
-# Would you like a **real-world coding challenge** to implement these concepts? 😃
