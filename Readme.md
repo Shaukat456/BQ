@@ -38,57 +38,51 @@ _Now, let us begin our descent into the world of Python! Follow me, and do try n
 
 ```
 /
-├── 📂 Basics/
-│   ├── 📄 variables.py              # Foundation of all Python creations
-│   ├── 📄 arithmetic_operations.py  # Mathematical manipulations
-│   ├── 📄 conditions.py             # Decision-making constructs
-│   ├── 📄 File-Operations.py        # Interacting with the file system
-│   ├── 📄 OOP.py                    # Object-Oriented Programming principles
-│   ├── 📂 DataTypes/               # The building blocks
-│   │   ├── 📄 DataTypes.py          # Overview of Python types
-│   │   ├── 📄 lists.py              # Dynamic arrays of doom
-│   │   ├── 📄 dictionary.py         # Key-value storage mechanisms
-│   │   └── 📄 tuple.py              # Immutable sequences
-│   ├── 📂 Functions/               # Code reusability chambers
-│   │   ├── 📄 functions.py          # Creating modular code
-│   │   └── 📄 commonFn.py           # Frequently used patterns
-│   ├── 📂 Loops/                   # Iteration experiments
-│   │   └── 📄 loops.py              # For, while, and comprehensions
-│   └── 📂 Problems/                # Testing grounds
-│       └── 📄 index.py              # Practice challenges
-├── 📂 Data-Structures/             # Advanced storage mechanisms
-│   ├── 📄 readme.md                 # Overview of data structures
-│   ├── 📂 Linear/                  # Sequential data storage
-│   │   ├── 📄 Linear-DS.py          # Introduction to linear structures
-│   │   ├── 📄 Array.py              # Array implementations
-│   │   ├── 📄 LinkedList.py         # Linked node chains
-│   │   └── 📄 Stack.py              # LIFO data management
-│   └── 📂 Non-Linear/              # Complex relational structures
-│       ├── 📄 Trees.py              # Hierarchical data structures
-│       ├── 📄 Graphs.py             # Node and edge networks
-│       └── 📄 HashTables.py         # Key-based lookup structures
-├── 📂 Algorithms/                  # Problem-solving strategies
-│   ├── 📄 readme.md                 # Algorithm overview
-│   ├── 📄 Complexity.md             # Time/Space complexity guide
-│   ├── 📂 Searching/               # Finding data efficiently
-│   │   └── 📄 Searching-Algorithms.py  # Binary search, linear search
-│   ├── 📂 Sorting/                 # Ordering mechanisms
-│   │   └── 📄 Sorting-Algorithms.py    # Bubble, merge, quick sort
-│   ├── 📂 Divide-And-Conquer/      # Breaking problems down
-│   │   └── 📄 algo.py                  # Recursive problem-solving
-│   ├── 📂 Greedy-Algorithms/       # Optimization techniques
-│   │   └── 📄 index.py                # Greedy approach examples
-│   └── 📂 Dynamic-Programming/     # Optimizing recursive solutions
-│       └── 📄 dp_examples.py          # Memoization and tabulation
-├── 📂 Visualizations/              # Learning through visuals
-│   ├── 📄 DataStructureVisuals.md   # Diagrams of data structures
-│   ├── 📄 AlgorithmFlowcharts.md    # Flowcharts of key algorithms
-│   └── 📄 ComplexityCharts.md       # Big-O visualization graphs
-└── 📂 Projects/                    # Practical applications
-    ├── 📄 Calculator.py             # Mathematical operations tool
-    ├── 📄 TempConv.py               # Temperature conversion utility
-    ├── 📄 WeightCon.py              # Weight conversion utility
-    └── 📄 DataVisualizer.py         # Data visualization tool
+│   └── 📄 Readme.md
+│   └── 📄 update_readme.py
+│   ├── 📂 Algorithms/
+│   │   └── 📄 readme.md
+│   │   ├── 📂 Divide-And-Conquer/
+│   │   │   └── 📄 algo.py
+│   │   ├── 📂 Greedy-Algorithms.py/
+│   │   │   └── 📄 index.py
+│   │   ├── 📂 Searching/
+│   │   │   └── 📄 Searching-Algorithms.py
+│   │   ├── 📂 Sorting/
+│   │   │   └── 📄 Sorting-Algorithms.py
+│   ├── 📂 Basics/
+│   │   └── 📄 File-Operations.py
+│   │   └── 📄 arithmetic_operations.py
+│   │   └── 📄 conditions.py
+│   │   └── 📄 pseudoCode.py
+│   │   └── 📄 variables.py
+│   │   ├── 📂 DataTypes/
+│   │   │   └── 📄 DataTypes.py
+│   │   │   └── 📄 dictionary.py
+│   │   │   └── 📄 lists.py
+│   │   │   └── 📄 tuple.py
+│   │   ├── 📂 Functions/
+│   │   │   └── 📄 commonFn.py
+│   │   │   └── 📄 functions.py
+│   │   ├── 📂 Loops/
+│   │   │   └── 📄 for-loop.py
+│   │   │   └── 📄 loops.py
+│   │   │   └── 📄 while.py
+│   │   ├── 📂 OOP/
+│   │   │   └── 📄 OOP.py
+│   │   ├── 📂 Problems/
+│   │   │   └── 📄 index.py
+│   ├── 📂 Data-Structures/
+│   │   └── 📄 readme.md
+│   │   ├── 📂 Linear/
+│   │   │   └── 📄 Array.py
+│   │   │   └── 📄 Linear-DS.py
+│   │   │   └── 📄 LinkedList.py
+│   │   │   └── 📄 Stack.py
+│   ├── 📂 Mini-Projects/
+│   │   └── 📄 Calculator.py
+│   │   └── 📄 TempConv.py
+│   │   └── 📄 WeightCon.py
 ```
 
 _"BEHOLD! My meticulously organized laboratory! Each chamber contains experimental materials crucial to your transformation into a coding genius! Mind the signs and follow the learning path for optimal results, Boss! xD"_
